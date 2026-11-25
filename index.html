@@ -436,6 +436,17 @@ html[data-bgimg] body{background:linear-gradient(180deg,rgb(var(--shade) / .72),
 .login{position:fixed;inset:0;z-index:70;display:flex;align-items:center;justify-content:center;padding:20px;background:var(--bg)}
 .login[hidden]{display:none}
 .login .sheet{padding-bottom:22px;min-height:0!important;max-width:400px;margin:auto;border:1px solid var(--border)!important;border-radius:18px!important}
+
+[data-theme="rosa"]{--bg:#fdf0f5;--surface:#fffafc;--surface2:#fbe3ed;--hover:#f7d4e2;--border:#f1cadb;--border2:#e3a6bf;--text:#4a2433;--text2:#5d3243;--muted:#9a6a7d;--faint:#c597a9;--accent:#e2588f;--accent-ink:#ffffff;--display:'Quicksand','Space Grotesk',sans-serif;--shade:74 36 51}
+[data-theme="rosa"] body{background:radial-gradient(circle at 12% 0%,rgba(255,182,213,.55),transparent 45%),radial-gradient(circle at 92% 18%,rgba(255,214,231,.8),transparent 40%),var(--bg);background-attachment:fixed}
+[data-theme="rosa"] .top h1,[data-theme="rosa"] .hero h1{font-weight:700;letter-spacing:0}
+[data-theme="rosa"] .logo{background:linear-gradient(160deg,#f48fb8,#e2588f);color:#fff;box-shadow:0 6px 18px rgba(226,88,143,.3)}
+[data-theme="rosa"] .btn.primary{box-shadow:0 6px 16px rgba(226,88,143,.28)}
+[data-theme="rosa"] .stat,[data-theme="rosa"] .panel,[data-theme="rosa"] .poster{box-shadow:0 2px 10px rgba(226,88,143,.08)}
+[data-theme="rosa"] .s-low{background:#fde1e6;color:#c0262d}
+[data-theme="rosa"] .s-mid{background:#ffe8d4;color:#b4500b}
+[data-theme="rosa"] .s-good{background:#ddf3e3;color:#15803d}
+[data-theme="rosa"] .s-top{background:#fdeebb;color:#9a5b06}
 </style></head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -464,6 +475,7 @@ html[data-bgimg] body{background:linear-gradient(180deg,rgb(var(--shade) / .72),
     arcade:  { name: 'Neon Arcade', desc: 'Rosa e ciano brilhando no escuro', font: 'Audiowide', sw: ['#07040f', '#170f2a', '#ff2bd6', '#22d3ee'], ff: "'Audiowide',sans-serif" },
     gameboy: { name: 'Game Boy', desc: 'Verde retrô, pixels e scanlines', font: 'Press+Start+2P', sw: ['#9bbc0f', '#8bac0f', '#0f380f', '#306230'], ff: "'Press Start 2P',monospace", light: true },
     console: { name: 'Azul Console', desc: 'Azul profundo de videogame', font: 'Exo+2:wght@600;700', sw: ['#050b1a', '#10204a', '#3d8bff', '#eef3ff'], ff: "'Exo 2',sans-serif" },
+    rosa:    { name: 'Rosa', desc: 'Rosa pastel claro e delicado', font: 'Quicksand:wght@600;700', sw: ['#fdf0f5', '#fffafc', '#e2588f', '#4a2433'], ff: "'Quicksand',sans-serif", light: true },
     claro:   { name: 'Claro', desc: 'Fundo claro para usar de dia', font: '', sw: ['#f4f5f8', '#ffffff', '#6a58f5', '#14171d'], ff: "'Space Grotesk',Inter,sans-serif", light: true },
     gotico:  { group: 'dark', name: 'Catedral Gótica', desc: 'Carmesim e preto, letras góticas e cruzes', font: 'Grenze+Gotisch:wght@500;700', sw: ['#0a0708', '#1c1215', '#b3202f', '#efe4dc'], ff: "'Grenze Gotisch',serif" },
     cacada:  { group: 'dark', name: 'Caçada Noturna', desc: 'Lua pálida e sangue, clima vitoriano', font: 'IM+Fell+English+SC', sw: ['#0b0c10', '#1a1c24', '#9e1b1b', '#e9e6e1'], ff: "'IM Fell English SC',serif" },
