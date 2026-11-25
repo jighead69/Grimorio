@@ -1,0 +1,14 @@
+name: Manter Supabase ativo
+on:
+  schedule:
+    - cron: '17 12 */3 * *'
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Consultar o Supabase
+        run: |
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" \
+            "https://esjfcwswsbjpakvdrrdt.supabase.co/rest/v1/games?select=id&limit=1" \
+            -H "apikey: sb_publishable_O8RgzBrAxbw6njnoOZcrTA_6yyUBZWs"
